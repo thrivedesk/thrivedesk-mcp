@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "thrivedesk",
+  "version": "1.0.0",
+  "description": "Search, reply, tag, assign and report on ThriveDesk help desk conversations from your AI assistant.",
+  "author": { "name": "ThriveDesk LLC", "email": "help@thrivedesk.com", "url": "https://www.thrivedesk.com" },
+  "homepage": "https://www.thrivedesk.com/mcp/",
+  "repository": "https://github.com/thrivedesk/thrivedesk-mcp",
+  "license": "MIT",
+  "keywords": ["helpdesk", "customer-support", "live-chat", "shared-inbox", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ThriveDesk",
+        "shortDescription": "Work your help desk from chat",
+        "longDescription": "ThriveDesk MCP connects ChatGPT to your ThriveDesk help desk. Search and summarise tickets, draft or send replies, add internal notes, tag, assign, snooze or move conversations, answer live chats, look up a customer's history and pull per-agent reports. Sign-in is OAuth with your normal ThriveDesk account. You pick one workspace and a Read-only, Standard or Full access preset, and ChatGPT can never do more than your own role allows. Every action shows in the thread under your name. Requires a ThriveDesk Standard or Unlimited plan. Replying to a customer, replying in live chat and forwarding send immediately; notes and drafts never reach the customer.",
+        "developerName": "ThriveDesk LLC",
+        "category": "Productivity",
+        "capabilities": ["Search conversations", "Draft and send replies", "Tag and assign tickets", "Look up contacts", "Answer live chats", "Team reports"],
+        "websiteURL": "https://www.thrivedesk.com/mcp/",
+        "supportURL": "https://help.thrivedesk.com/en/mcp",
+        "privacyPolicyURL": "https://www.thrivedesk.com/legal/privacy/",
+        "termsOfServiceURL": "https://www.thrivedesk.com/legal/terms/",
+        "defaultPrompt": [
+          "What is still open in my Billing inbox from this week?",
+          "Summarise my latest unassigned ticket and draft a reply, but do not send it.",
+          "How many conversations did each agent resolve last month?"
+        ],
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

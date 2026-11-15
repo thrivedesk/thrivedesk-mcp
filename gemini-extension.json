@@ -1,0 +1,10 @@
+{
+  "name": "thrivedesk",
+  "version": "1.0.0",
+  "description": "Search, reply, tag, assign and report on ThriveDesk help desk conversations.",
+  "mcpServers": {
+    "thrivedesk": {
+      "httpUrl": "https://mcp.thrivedesk.com"
+    }
+  }
+}
